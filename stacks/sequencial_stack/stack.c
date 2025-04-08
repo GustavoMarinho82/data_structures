@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdbool.h>
 #include <stdlib.h>
 #include "stack.h"
 
@@ -61,13 +62,13 @@ int max_length(Stack* S) {
 	return S->capacity;
 }
 
-char is_empty(Stack* S) {
-	// Returns 1 if the stack is empty, otherwise 0 [θ(1)]
+bool is_empty(Stack* S) {
+	// Returns true if the stack is empty, false otherwise [θ(1)]
 	return (S->size == 0);
 }
 
-char is_full(Stack* S) {
-	// Returns 1 if the stack is full, otherwise 0 [θ(1)]
+bool is_full(Stack* S) {
+	// Returns true if the stack is full, false otherwise [θ(1)]
 	return (S->size == S->capacity);
 }
 
