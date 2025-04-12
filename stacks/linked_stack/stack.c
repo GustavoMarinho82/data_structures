@@ -57,8 +57,8 @@ int length(Stack* S) {
 	return S->size;
 }
 
-char is_empty(Stack* S) {
-	// Returns 1 if the stack is empty, otherwise 0 [θ(1)]
+bool is_empty(Stack* S) {
+	// Returns true if the stack is empty, false otherwise [θ(1)]
 	return (S->size == 0);
 }
 
