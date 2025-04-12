@@ -62,7 +62,7 @@ bool remove_element(List* L, int value) {
 	
 	while (p != NULL) {
 		if (p->element == value) {
-			if (pPrev == NULL)
+			if (p == L->head)
 				L->head = p->next;
 				
 			else
@@ -89,7 +89,7 @@ int remove_all(List* L, int value) {
 
 	while (p != NULL) {
 		if (p->element == value) {
-			if (pPrev == NULL) {
+			if (p == L->head) {
 				L->head = p->next;
 				free(p);
 				p = L->head;
