@@ -33,7 +33,7 @@ void insert(List* L, int value) {
 }
 
 bool search(List* L, int value) {
-	// Returns 1 if the value is in the list, otherwise returns 0 [O(N)]
+	// Returns true if the value is in the list, false otherwise [O(N)]
 	for (int i = 0; i < L->size; i++) {
 		if (L->elements[i] == value)
 			return true;
